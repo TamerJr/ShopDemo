@@ -16,7 +16,10 @@ const AsideBar = () => {
   return (
     <aside className={styles.Aside}>
       <button onClick={saveForNow}>Save Cart</button>
-      <p>{totalPrice}</p>
+     <div>
+      <h2>Total Price</h2>
+       <p>{totalPrice}</p>
+       </div>
     </aside>
   );
 };
