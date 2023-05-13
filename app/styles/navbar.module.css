@@ -1,0 +1,27 @@
+.Nav {
+  height: 100px;
+}
+.Nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Nav li {
+    text-align: center;
+    vertical-align: middle;
+}
+.LastList {
+    position: relative;
+}
+.Nav li small{
+    background-color: rgb(251, 151, 1);
+    padding: 1px 5px;
+    font-size: 12px;
+    border-radius: 100%;
+    color: aliceblue;
+    position: absolute;
+    right:-2px;
+    top:-5%;
+}

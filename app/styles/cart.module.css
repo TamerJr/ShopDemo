@@ -1,0 +1,6 @@
+.CartPage{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}

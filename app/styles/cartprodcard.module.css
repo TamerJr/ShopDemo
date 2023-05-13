@@ -1,0 +1,51 @@
+.Article {
+  height: auto;
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.188);
+  border-radius: 5px;
+}
+.Article div {
+  height: 100%;
+}
+.Article div img {
+  height: 350px;
+  object-fit: contain;
+}
+.RemoveElement {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: black;
+  background-color: inherit;
+  padding: 10px;
+  border-radius: 100%;
+}
+.Article .ProductInfo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Article span {
+  font-weight: bold;
+}
+.Article input{
+    width :30px;
+    padding:  8px 0px 8px 10px;
+    font-weight: bold;
+}
+ .UpdateAmount{
+    padding :5px 10px;
+    background-color: #4d4a4a3e;
+}
+.UpdatePart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}

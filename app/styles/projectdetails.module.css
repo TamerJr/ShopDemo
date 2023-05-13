@@ -1,0 +1,44 @@
+.projectDetailsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LeftSideContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.Image {
+  width: 400px;
+  object-fit: contain;
+}
+.RightSideContainer{
+    position: relative;
+}
+.PriceSmall{
+    position: absolute;
+    top: 30px;
+    left :10px;
+    background-color: #000000bf;
+    border-radius: 5px;
+    color: aliceblue;
+    border: 1p solid white;
+    font-weight: bolder;
+    font-size: medium;
+    padding: 5px 10px;
+}
+@media only screen and (max-width:780px){
+    .projectDetailsContainer{
+        flex-direction:column-reverse ;
+    }
+    .Image{
+        width :400px;
+    }
+}
+@media only screen and (max-width:330px){
+    .Image{
+        width:100%;
+    }
+}
