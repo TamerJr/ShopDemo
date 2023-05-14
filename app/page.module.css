@@ -1,7 +1,45 @@
-.main{
-    width:100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* overflow: hidden; */
+}
+.WatchsBar {
+  background-color: rgba(184, 230, 230, 0.595);
+  scrollbar-width: none;
+
+  overflow: scroll;
+  height: 250px;
+  width: 90%;
+  /* scr */
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.WatchsBar::-webkit-scrollbar {
+  width: 0px;
+}
+.SampleProd {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.WatchsBar img {
+  height: 150px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.WatchsBar div {
+  text-align: center;
+  /* overflow:hidden; */
+  width: 250px;
+  margin:0rem 1rem;
 }
