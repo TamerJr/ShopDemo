@@ -7,7 +7,7 @@ export const ProdContextProvider = ({ children }) => {
   const [eles, setEles] = useState(tempArr);
   const [prodsCounter, setProdsCounter] = useState(0);
 
-  const handleAdd = (ele) => {
+  const handleAdd = (ele) => { // Adding products  >> will convert to mongo
     let newTempList = eles.filter((newele) => newele.Product.id === ele.id);
     if (newTempList.length === 1) {
       newTempList[0].amount += 1;
@@ -19,7 +19,7 @@ export const ProdContextProvider = ({ children }) => {
         }
       }
     } else {
-      setEles((eles) => [...eles, { Product: ele, amount: 1 }]);
+      setEles((eles) => [...eles, { Product: ele, amount: 1 }]);  //update 
     }
     handleProductCounter()
   };
@@ -34,7 +34,7 @@ export const ProdContextProvider = ({ children }) => {
   useEffect(()=>{
     handleProductCounter()
   })
-  const handleDelete = (ind) => {
+  const handleDelete = (ind) => { //delete
     let temparr = eles?.filter((_, index) => index != ind);
     setEles(temparr);
     handleProductCounter()
